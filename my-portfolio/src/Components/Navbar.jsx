@@ -1,5 +1,6 @@
 import { Disclosure} from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Switch from './Switch'
 
 const navigation = [
   { name: "Page d'acceuil", href: '#', current: false},
@@ -54,11 +55,7 @@ export default function Example() {
                   </div>
                 </div>
               </div>
-              <div className="absolute sm:max-md:absolute sm:max-md:right-0 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                    <button className="w-[40px] cursor-pointer h-[28px] p-[2px] flex justify-between items-center border border-neutral-500 dark:bg-slate-900 bg-zinc-300 rounded-[30px] relative">
-                        <div className={`w-[15px] absolute h-[15px]  bg-indigo-950 dark:bg-white duration-200 rounded-full`}></div>
-                    </button>
-              </div>
+              <Switch/>
             </div>
           </div>
 
