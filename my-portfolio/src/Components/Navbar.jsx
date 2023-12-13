@@ -16,13 +16,13 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-gray-800 dark:bg-gradient-to-b dark:from-indigo-200 dark:to-fuchsia-300">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center sm:max-md:grid sm:max-md:content-center sm:max-md:justify-center sm:max-md:relative max-sm:grid max-sm:content-center max-sm:justify-center justify-between">
                 <div>
-                    <h1 className='text-[#E0F4FF] font-semibold text-2xl' >Logo</h1>
+                    <h1 className='text-[#E0F4FF] dark:text-neutral-700 font-semibold text-2xl' >Logo</h1>
                 </div> 
               <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
                 {/* Mobile menu button*/}
@@ -44,8 +44,8 @@ export default function Example() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                            item.current ? 'bg-cyan-500 text-fuchsia-500' : 'text-[#E0F4FF] hover:bg-gray-700 hover:text-fuchsia-500',
-                            'block rounded-md px-3 py-2 text-base font-medium'
+                            item.current ? 'bg-cyan-500 text-fuchsia-500' : 'text-[#E0F4FF] hover:bg-gray-700 hover:text-fuchsia-500 dark:hover:text-white',
+                            'block rounded-md px-3 py-2 text-base font-medium dark:text-neutral-700'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -67,8 +67,8 @@ export default function Example() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-fuchsia-500',
-                    'block rounded-md px-3 py-2 text-base font-medium'
+                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 dark:hover:text-white hover:text-fuchsia-500',
+                    'block rounded-md px-3 py-2 text-base font-medium dark:text-neutral-700'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
