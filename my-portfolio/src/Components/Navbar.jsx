@@ -1,13 +1,14 @@
 import { Disclosure} from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom'
 import Switch from './Switch'
 
 const navigation = [
-  { name: "Page d'acceuil", href: '#', current: false},
-  { name: 'Sur moi', href: '#', current: false},
-  { name: 'Projet', href: '#', current: false},
-  { name: 'Reconnaissance', href: '#', current: false},
-  { name: 'Contact', href: '#', current: false},
+  { name: "Page d'acceuil", href: '/', current: false},
+  { name: 'Sur moi', href: '/apropos', current: false},
+  { name: 'Projet', href: '/', current: false},
+  { name: 'Reconnaissance', href: '/', current: false},
+  { name: 'Contact', href: '/', current: false},
 ]
 
 function classNames(...classes) {
@@ -40,9 +41,9 @@ export default function Example() {
                 <div className="hidden sm:ml-6 md:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
                         className={classNames(
                             item.current ? 'bg-cyan-500 text-fuchsia-500' : 'text-[#E0F4FF] hover:bg-gray-700 hover:text-fuchsia-500 dark:hover:text-white',
                             'block rounded-md px-3 py-2 text-base font-medium dark:text-neutral-700'
@@ -50,7 +51,7 @@ export default function Example() {
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -62,10 +63,9 @@ export default function Example() {
           <Disclosure.Panel className="md:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
-                <Disclosure.Button
+                <Link
                   key={item.name}
-                  as="a"
-                  href={item.href}
+                  to={item.href}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 dark:hover:text-white hover:text-fuchsia-500',
                     'block rounded-md px-3 py-2 text-base font-medium dark:text-neutral-700'
@@ -73,7 +73,7 @@ export default function Example() {
                   aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
-                </Disclosure.Button>
+                </Link>
               ))}
             </div>
           </Disclosure.Panel>
