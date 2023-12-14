@@ -4,6 +4,9 @@ import Theme from './Context/Theme'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Acceuil } from './Pages/Acceuil'
 import { Apropos } from './Pages/Apropos'
+import { Projet } from './Pages/Projet'
+import { Reconnaissance } from './Pages/Reconnaissance'
+import { Contact } from './Pages/Contact'
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || ' ');
@@ -27,6 +30,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Acceuil/>}/>
           <Route path='/apropos' element={<Apropos/>}/>
+          <Route path='/projet' element={<Projet/>}/>
+          <Route path='/reconnaissance' element={<Reconnaissance/>}/>
+          <Route path='/contact' element={<Contact/>}/>
         </Routes>
       </Router>
       </div>

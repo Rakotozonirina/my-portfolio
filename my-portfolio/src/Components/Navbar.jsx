@@ -6,9 +6,9 @@ import Switch from './Switch'
 const navigation = [
   { name: "Page d'acceuil", href: '/', current: false},
   { name: 'Sur moi', href: '/apropos', current: false},
-  { name: 'Projet', href: '/', current: false},
-  { name: 'Reconnaissance', href: '/', current: false},
-  { name: 'Contact', href: '/', current: false},
+  { name: 'Projet', href: '/projet', current: false},
+  { name: 'Reconnaissance', href: '/reconnaissance', current: false},
+  { name: 'Contact', href: '/contact', current: false},
 ]
 
 function classNames(...classes) {
@@ -17,7 +17,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-gray-800 dark:bg-gradient-to-b dark:from-indigo-200 dark:to-fuchsia-300">
+    <Disclosure as="nav" className="bg-gray-800 dark:bg-gradient-to-b dark:from-indigo-200 dark:to-fuchsia-300 fixed top-0 left-0 w-full">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
