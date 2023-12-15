@@ -6,11 +6,11 @@ import { Link } from "react-router-dom"
 
 function ArticleHero(){
     return(
-        <article className="mx-16 p-4 w-[40%] z-10 flex flex-col gap-2">
+        <article className="mx-16 p-4 md:max-lg:w-[80%] mt-32 w-[40%] z-10 flex flex-col gap-2">
             <h1 className="text-neutral-800 dark:text-white md:max-lg:text-3xl lg:max-xl:text-3xl text-4xl font-bold capitalize tracking-wider"><span>INTEGRATEUR WEB ET FRONT END DEVELOPPEUR</span> <br /> <span className="text-indigo-950 dark:text-white">Bonjour! Je suis RAKOTOMANANA Andriamihaja Zo Nirina</span> </h1>
             <div>
                 <p><span className="text-stone-600 dark:text-stone-300 text-xl lg:max-xl:text-lg md:max-lg:text-lg font-normal tracking-tight">J’aime construire des sites web et si vous avez besoin un intégrateur web et front capable de faire votre projet parfaitement.</span> <span className="text-indigo-950 text-xl lg:max-xl:text-lg md:max-lg:text-lg font-normal tracking-tight dark:text-blue-600">Contactez moi!</span> </p>
-                <button className="bg-indigo-950 dark:bg-blue-600 text-white p-2 text-lg font-medium my-2">CV Télécharger</button>
+                <button className="bg-indigo-950 dark:bg-blue-600 text-white  p-2 text-lg font-medium my-2">CV Télécharger</button>
             </div>
         </article>
     )
@@ -18,7 +18,7 @@ function ArticleHero(){
 
 function Icons(){
     return(
-        <div className="absolute flex flex-col gap-4 bottom-12 left-8">
+        <div className="absolute md:max-lg:bottom-96 flex flex-col gap-4 bottom-12 left-8">
             <span>
                 <Link to="https://www.linkedin.com/in/zo-nirina-rakotomanana-5276ab236/" target="_blank">
                     <FaLinkedinIn className="w-5 h-5 dark:text-white"/>
@@ -36,7 +36,7 @@ function Icons(){
 export function Acceuil(){
     return(
         <>
-            <div className="w-full h-[100dvh] relative flex items-center">
+            <div className="w-full h-[100dvh] md:max-lg:h-[150dvh] md:max-lg:items-start md:max-lg:justify-center relative flex items-center">
                 <Navbar/>
                 <ArticleHero/>
                 <Icons/>

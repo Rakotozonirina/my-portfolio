@@ -25,7 +25,7 @@ function App() {
   },[theme]);
   return (
     <Theme.Provider value={{currentTheme: theme, changeCurrentTheme}}>
-    <div className='w-full h-[100dvh] bg-gradient-to-b from-indigo-200 to-fuchsia-300 dark:bg-gradient-to-b dark:from-gray-800 dark:to-gray-800'>
+    <div className='w-full h-[100dvh] md:max-lg:h-[150dvh] bg-gradient-to-b from-indigo-200 to-fuchsia-300 dark:bg-gradient-to-b dark:from-gray-800 dark:to-gray-800'>
       <Router>
         <Routes>
           <Route path='/' element={<Acceuil/>}/>
