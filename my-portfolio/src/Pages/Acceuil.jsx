@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 
 function ArticleHero(){
     return(
-        <article className="mx-8 sm:mx-16 max-sm:mt-32 sm:p-4 sm:max-md:mt-32 max-sm:w-full sm:max-md:w-[80%] md:max-lg:w-[80%] md:max-lg:mt-32 w-[40%] z-10 flex flex-col gap-2">
+        <article className="mx-8 sm:mx-16 max-sm:mt-32 sm:p-4 sm:max-md:mt-32 max-sm:w-full sm:max-md:w-[80%] md:max-lg:w-[80%] md:max-lg:mt-32 w-[40%] z-10 flex flex-col gap-6">
             <h1 className="text-neutral-800 dark:text-white md:max-lg:text-3xl lg:max-xl:text-3xl text-4xl font-bold capitalize tracking-wider"><span>INTEGRATEUR WEB ET FRONT END DEVELOPPEUR</span> <br /> <span className="text-indigo-950 dark:text-white">Bonjour! Je suis RAKOTOMANANA Andriamihaja Zo Nirina</span> </h1>
             <div>
                 <p><span className="text-stone-600 dark:text-stone-300 text-xl lg:max-xl:text-lg md:max-lg:text-lg font-normal tracking-tight">J’aime construire des sites web et si vous avez besoin un intégrateur web et front capable de faire votre projet parfaitement.</span> <span className="text-indigo-950 text-xl lg:max-xl:text-lg md:max-lg:text-lg font-normal tracking-tight dark:text-blue-600">Contactez moi!</span> </p>
