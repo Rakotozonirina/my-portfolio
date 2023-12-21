@@ -47,7 +47,7 @@ export default function Example() {
                         to={item.href}
                         className={classNames(
                             item.current ? 'bg-cyan-500 text-fuchsia-500' : 'text-[#E0F4FF] hover:bg-gray-700 hover:text-fuchsia-500 dark:hover:text-white',
-                            'block rounded-md px-3 py-2 text-base font-medium dark:text-neutral-700'
+                            'block rounded-md px-3 py-2 text-base font-Marker font-medium dark:text-neutral-700'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -69,7 +69,7 @@ export default function Example() {
                   to={item.href}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 dark:hover:text-white hover:text-fuchsia-500',
-                    'block rounded-md px-3 py-2 text-base font-medium dark:text-neutral-700'
+                    'block rounded-md px-3 py-2 text-base font-medium dark:text-neutral-700 font-Marker'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
