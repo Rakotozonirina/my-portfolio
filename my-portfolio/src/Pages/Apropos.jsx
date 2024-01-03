@@ -2,6 +2,7 @@ import React from "react"
 import Navbar from "../Components/Navbar"
 import SvgJavascript from "./Components/Apropos/Svg/SvgJavascript"
 import CssSvg from "./Components/Apropos/Svg/CssSvg"
+import TestSvg from "./Components/Apropos/Svg/TestSvg"
 
 
 function Illustration() {
@@ -13,6 +14,9 @@ function Illustration() {
             </div>
             <div className="border border-yellow-400">
                     <CssSvg/>
+            </div>
+            <div className="border border-gray-400">
+                <TestSvg/>
             </div>
         </section>
         </>
