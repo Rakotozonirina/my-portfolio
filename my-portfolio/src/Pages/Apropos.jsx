@@ -1,22 +1,26 @@
 import React from "react"
 import Navbar from "../Components/Navbar"
 import SvgJavascript from "./Components/Apropos/Svg/SvgJavascript"
+import MyJs from "./Components/Apropos/Svg/MyJs"
+import HtmlSvg from "./Components/Apropos/Svg/HtmlSvg"
 import CssSvg from "./Components/Apropos/Svg/CssSvg"
-import TestSvg from "./Components/Apropos/Svg/TestSvg"
 
 
 function Illustration() {
     return(
         <>
-        <section className="flex">
+        <section className="flex flex-wrap">
             <div className="border border-red-400">
                     <SvgJavascript/>
             </div>
-            <div className="border border-yellow-400">
+            <div className="border border-green-400">
                     <CssSvg/>
             </div>
-            <div className="border border-gray-400">
-                <TestSvg/>
+            <div className="border border-yellow-400">
+                <MyJs/>
+            </div>
+            <div className="border border-amber-400">
+                <HtmlSvg/>
             </div>
         </section>
         </>
