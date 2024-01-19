@@ -194,8 +194,8 @@ const MyJs = () => (
       />
       <path
         id="path1"
+        className="fill-neutral-800 dark:fill-[#c5c7ff]"
         style={{
-          fill: "#c5c7ff",
           fillOpacity: 1,
           stroke: "none",
           strokeWidth: 0.0523748,
