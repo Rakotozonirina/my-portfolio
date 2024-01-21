@@ -1,11 +1,12 @@
 import React from "react"
 import Navbar from "../Components/Navbar"
 //import MyJs from "./Components/Apropos/Svg/MyJs"
-import HtmlSvg from "./Components/Apropos/Svg/HtmlSvg"
+//import HtmlSvg from "./Components/Apropos/Svg/HtmlSvg"
 //import CssSvg from "./Components/Apropos/Svg/CssSvg"
 import GitSvg from "./Components/Apropos/Svg/GitSvg"
 import GitHubSvg from "./Components/Apropos/Svg/GitHubSvg"
 import TailwindCssSvg from "./Components/Apropos/Svg/TailwindCssSvg"
+import ReactSvg from "./Components/Apropos/Svg/ReactSvg"
 
 
 function Illustration() {
@@ -19,10 +20,10 @@ function Illustration() {
             <div className="border border-yellow-400">
                 <MyJs/>
             </div>
-            */}
             <div className="border border-amber-400">
                 <HtmlSvg/>
             </div>
+            */}
             <div className="border border-amber-400">
                 <GitSvg/>
             </div>
@@ -31,6 +32,9 @@ function Illustration() {
             </div>
             <div className="border border-amber-400">
                 <TailwindCssSvg/>
+            </div>
+            <div className="border border-amber-400">
+                <ReactSvg/>
             </div>
         </section>
         </>
