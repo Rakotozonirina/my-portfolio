@@ -1,48 +1,32 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import Navbar from "../Components/Navbar"
-//import MyJs from "./Components/Apropos/Svg/MyJs"
-//import HtmlSvg from "./Components/Apropos/Svg/HtmlSvg"
-//import CssSvg from "./Components/Apropos/Svg/CssSvg"
-//import GitSvg from "./Components/Apropos/Svg/GitSvg"
-//import GitHubSvg from "./Components/Apropos/Svg/GitHubSvg"
-//import TailwindCssSvg from "./Components/Apropos/Svg/TailwindCssSvg"
+import TextTransition, { presets } from 'react-text-transition'
+import MyJs from "./Components/Apropos/Svg/MyJs"
+import HtmlSvg from "./Components/Apropos/Svg/HtmlSvg"
+import CssSvg from "./Components/Apropos/Svg/CssSvg"
+import GitSvg from "./Components/Apropos/Svg/GitSvg"
+import GitHubSvg from "./Components/Apropos/Svg/GitHubSvg"
+import TailwindCssSvg from "./Components/Apropos/Svg/TailwindCssSvg"
 import ReactSvg from "./Components/Apropos/Svg/ReactSvg"
 import BootstrapSvg from "./Components/Apropos/Svg/BootstrapSvg"
 import WordPressSvg from "./Components/Apropos/Svg/WordPressSvg"
 
 
 function Illustration() {
+    const [index, setIndex] = useState(0);
+    const Illustrates = [<MyJs/>, <CssSvg/>, <HtmlSvg/>, <GitSvg/>, <GitHubSvg/>, <TailwindCssSvg/>, <ReactSvg/>, <BootstrapSvg/>, <WordPressSvg/>];
+    useEffect(() => {
+        const intervalId = setInterval(
+            () => setIndex((index) => index + 1),
+            3000, // every 3 seconds
+          );
+          return () => clearTimeout(intervalId);
+    }, []);
     return(
         <>
-        <section className="flex flex-wrap">
-            {/*
-            <div className="border border-green-400">
-                    <CssSvg/>
-            </div>
-            <div className="border border-yellow-400">
-                <MyJs/>
-            </div>
-            <div className="border border-amber-400">
-                <HtmlSvg/>
-            </div>
-            <div className="border border-amber-400">
-                <GitSvg/>
-            </div>
-            <div className="border border-amber-400">
-                <GitHubSvg/>
-            </div>
-            <div className="border border-amber-400">
-                <TailwindCssSvg/>
-            </div>
-            */}
-            <div className="border border-amber-400">
-                <ReactSvg/>
-            </div>
-            <div className="border border-amber-400">
-                <BootstrapSvg/>
-            </div>
-            <div className="border border-amber-400">
-                <WordPressSvg/>
+        <section className="flex w-full items-center justify-center">
+            <div>
+                <TextTransition springConfig={presets.wobbly}>{Illustrates[index % Illustrates.length]}</TextTransition>
             </div>
         </section>
         </>
@@ -52,9 +36,8 @@ function Illustration() {
 export function Apropos(){
     return(
         <>
-        <div className="h-[100dvh] w-full">
+        <div className="h-[100dvh] acceuil-body md:max-lg:flex md:max-lg:items-center md:max-lg:justify-center xl:flex xl:items-center xl:justify-center w-full">
         <Navbar/>
-        <h1>Sur moi</h1>
         <Illustration/>
         </div>
         </>

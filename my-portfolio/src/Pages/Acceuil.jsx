@@ -6,7 +6,6 @@ import { Link } from "react-router-dom"
 import { gsap } from "gsap"
 import TextTransition, { presets } from 'react-text-transition'
 import { TextPlugin } from "gsap/dist/TextPlugin"
-//className="text-indigo-950 dark:text-white"
 
 function ArticleHero(){
     const Btn = useRef();

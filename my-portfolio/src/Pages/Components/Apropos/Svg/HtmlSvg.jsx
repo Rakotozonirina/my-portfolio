@@ -13,7 +13,7 @@ const HtmlSvg = () => (
     xmlnsXlink="http://www.w3.org/1999/xlink"
     xmlns="http://www.w3.org/2000/svg"
     svg="http://www.w3.org/2000/svg"
-    className="h-96 border border-red-300 w-fit"
+    className="h-96 w-fit"
   >
     <namedview
       id="namedview1"
