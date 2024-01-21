@@ -3,10 +3,12 @@ import Navbar from "../Components/Navbar"
 //import MyJs from "./Components/Apropos/Svg/MyJs"
 //import HtmlSvg from "./Components/Apropos/Svg/HtmlSvg"
 //import CssSvg from "./Components/Apropos/Svg/CssSvg"
-import GitSvg from "./Components/Apropos/Svg/GitSvg"
-import GitHubSvg from "./Components/Apropos/Svg/GitHubSvg"
-import TailwindCssSvg from "./Components/Apropos/Svg/TailwindCssSvg"
+//import GitSvg from "./Components/Apropos/Svg/GitSvg"
+//import GitHubSvg from "./Components/Apropos/Svg/GitHubSvg"
+//import TailwindCssSvg from "./Components/Apropos/Svg/TailwindCssSvg"
 import ReactSvg from "./Components/Apropos/Svg/ReactSvg"
+import BootstrapSvg from "./Components/Apropos/Svg/BootstrapSvg"
+import WordPressSvg from "./Components/Apropos/Svg/WordPressSvg"
 
 
 function Illustration() {
@@ -23,7 +25,6 @@ function Illustration() {
             <div className="border border-amber-400">
                 <HtmlSvg/>
             </div>
-            */}
             <div className="border border-amber-400">
                 <GitSvg/>
             </div>
@@ -33,8 +34,15 @@ function Illustration() {
             <div className="border border-amber-400">
                 <TailwindCssSvg/>
             </div>
+            */}
             <div className="border border-amber-400">
                 <ReactSvg/>
+            </div>
+            <div className="border border-amber-400">
+                <BootstrapSvg/>
+            </div>
+            <div className="border border-amber-400">
+                <WordPressSvg/>
             </div>
         </section>
         </>
