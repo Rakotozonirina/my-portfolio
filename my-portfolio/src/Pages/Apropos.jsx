@@ -10,6 +10,7 @@ import TailwindCssSvg from "./Components/Apropos/Svg/TailwindCssSvg"
 import ReactSvg from "./Components/Apropos/Svg/ReactSvg"
 import BootstrapSvg from "./Components/Apropos/Svg/BootstrapSvg"
 import WordPressSvg from "./Components/Apropos/Svg/WordPressSvg"
+import { Icons } from "./Components/Apropos/Illustration/Icons"
 
 
 function Illustration() {
@@ -36,9 +37,10 @@ function Illustration() {
 export function Apropos(){
     return(
         <>
-        <div className="h-[100dvh] acceuil-body md:max-lg:flex md:max-lg:items-center md:max-lg:justify-center xl:flex xl:items-center xl:justify-center w-full">
+        <div className="h-[100dvh] max-sm:h-[200dvh] sm:max-md:h-[180dvh] md:max-lg:h-[150dvh] relative acceuil-body max-sm:flex max-sm:items-center max-sm:justify-center sm:max-md:flex sm:max-md:items-center sm:max-md:justify-center md:max-lg:flex md:max-lg:items-center md:max-lg:justify-center lg:max-xl:flex lg:max-xl:items-center lg:max-xl:justify-center xl:flex xl:items-center xl:justify-center w-full">
         <Navbar/>
         <Illustration/>
+        <Icons/>
         </div>
         </>
     )
