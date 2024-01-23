@@ -14,7 +14,7 @@ export function Icons(){
     },[]);
     return(
         <>
-            <img src={Dyamond} ref={Animate} alt="Dyamond" className="absolute max-sm:top-24 max-sm:right-[-10%] sm:max-md:top-24 sm:max-md:right-[-10%] md:max-lg:top-24 md:max-lg:right-0 lg:max-xl:bottom-[-25%] xl:bottom-[-25%] lg:max-xl:left-0 xl:left-0" />
+            <img src={Dyamond} ref={Animate} alt="Dyamond" className="absolute max-sm:top-24 max-sm:right-[-10%] sm:max-md:top-24 sm:max-md:right-[-10%] md:max-lg:top-24 md:max-lg:right-0 lg:max-xl:bottom-[-25%] xl:bottom-[-30%] lg:max-xl:left-0 xl:left-0" />
             <img src={Planet} ref={AnimateOne} alt="Planet" className="absolute max-sm:bottom-24 max-sm:left-12 sm:max-md:bottom-24 sm:max-md:left-12 md:max-lg:bottom-24 md:max-lg:left-12 lg:max-xl:top-24 xl:top-24 lg:max-xl:right-12 xl:right-12" />
         </>
     )
