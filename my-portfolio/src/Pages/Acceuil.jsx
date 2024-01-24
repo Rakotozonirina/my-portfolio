@@ -46,7 +46,7 @@ function ArticleHero(){
     )
 }
 
-function Icons(){
+export function Icons(){
     return(
         <div className="absolute sm:max-md:top-[50%] max-sm:top-[50%] md:max-lg:bottom-96 flex flex-col gap-4 bottom-12 left-8">
             <span>
