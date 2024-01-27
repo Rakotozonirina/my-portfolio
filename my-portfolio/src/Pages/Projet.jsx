@@ -1,8 +1,7 @@
 import React from "react"
 import Navbar from "../Components/Navbar"
 import { Icons } from "./Acceuil"
-import Card from "./Components/Project/Asset/Card"
-import CardTwo from "./Components/Project/Asset/CardTwo"
+import Project from "./Components/Project/Component/Project"
 
 function HeroProjet(){
     return(
@@ -15,10 +14,9 @@ function HeroProjet(){
 export function Projet(){
     return(
         <>
-        <div className="w-full h-[100dvh] flex items-center flex-wrap justify-end relative border border-red-400">
+        <div className="w-full h-[100dvh] acceuil-body flex items-center flex-wrap justify-end relative border border-red-400">
         <Navbar/>
-        <Card/>
-        <CardTwo/>
+        <Project/>
         <Icons/>
         <HeroProjet/>
         </div>
