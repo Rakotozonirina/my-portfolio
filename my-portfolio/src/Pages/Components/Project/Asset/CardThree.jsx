@@ -7,7 +7,7 @@ import Me from "../../../../Assets/Acceuil/zo nirina.png"
 
 export default function CardThree(){
     return(
-        <div className="max-w-2xl mx-40 mt-12 overflow-hidden bg-gray-800 rounded-lg shadow-md dark:bg-white">
+        <div className="max-sm:max-w-[30rem] sm:max-md:w-[38rem] md:max-lg:w-[44rem] lg:max-w-2xl mx-40 mt-12 overflow-hidden bg-gray-800 rounded-lg shadow-md dark:bg-white">
             <img className="object-cover w-full h-64" src={Panther} alt="Honey"/>
 
             <div className="p-6">

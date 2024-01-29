@@ -48,7 +48,7 @@ function ArticleHero(){
 
 export function Icons(){
     return(
-        <div className="absolute sm:max-md:top-[50%] max-sm:top-[50%] md:max-lg:bottom-96 flex flex-col gap-4 bottom-12 left-8">
+        <div className="absolute sm:max-md:rounded sm:max-md:p-2 sm:max-md:h-fit sm:max-md:bg-[#c5c7ff] sm:max-md:dark:bg-neutral-800 sm:max-md:top-[50%] max-sm:top-[50%] md:max-lg:bottom-96 flex flex-col gap-4 bottom-12 left-8">
             <span>
                 <Link to="https://www.linkedin.com/in/zo-nirina-rakotomanana-5276ab236/" target="_blank">
                     <FaLinkedinIn className="w-5 h-5 dark:text-white"/>
