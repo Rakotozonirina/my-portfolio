@@ -17,7 +17,7 @@ export default function Project(){
     }, []);
     return(
         <>
-            <div className="max-sm:border max-sm:border-red-400">
+            <div className="max-sm:p-4 max-sm:flex max-sm:items-center max-sm:justify-center w-fit">
                 <TextTransition springConfig={presets.wobbly}>{Project[index % Project.length]}</TextTransition>
             </div>
         </>
