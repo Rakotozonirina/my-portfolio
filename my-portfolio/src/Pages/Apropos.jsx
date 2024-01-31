@@ -27,7 +27,7 @@ function Illustration() {
     }, []);
     return(
         <>
-        <section className="flex w-fit items-center justify-center lg:max-xl:border lg:max-xl:border-red-400 lg:max-xl:mx-48 xl:mx-48">
+        <section className="flex w-fit items-center justify-center lg:max-xl:border lg:max-xl:border-red-400 lg:max-xl:mx-44 xl:mx-48">
             <div>
                 <TextTransition springConfig={presets.wobbly}>{Illustrates[index % Illustrates.length]}</TextTransition>
             </div>

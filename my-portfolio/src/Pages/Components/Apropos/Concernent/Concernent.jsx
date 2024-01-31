@@ -3,7 +3,7 @@ import React from "react"
 
 function Competence(){
     return(
-        <div class="px-4 py-4 mt-6 bg-gray-800 rounded-lg shadow-lg dark:bg-[#FEF5EA]">
+        <div class="px-4 lg:max-xl:px-2 lg:max-xl:py-2 lg:max-xl:mt-0 py-4 mt-6 bg-gray-800 rounded-lg shadow-lg dark:bg-[#FEF5EA]">
             <div class="flex-shrink-0">
                 <div class="flex items-center justify-center w-12 h-12 mx-auto text-[#FEF5EA] bg-indigo-500 rounded-md">
                     <svg width="20" height="20" fill="currentColor" class="w-6 h-6" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +24,7 @@ function Competence(){
 
 export default function Concernent(){
     return(
-        <div className="flex items-center xl:mx-12 lg:max-xl:mx-14 lg:max-xl:border lg:max-xl:border-red-400 justify-center">
+        <div className="flex items-center xl:mx-12 lg:max-xl:mx-12 lg:max-xl:border lg:max-xl:border-red-400 justify-center">
             <Competence/>
         </div>
     )
