@@ -5,7 +5,7 @@ import LogoZo from '../Assets/Acceuil/zonirina-removebg-preview.png'
 import Switch from './Switch'
 
 const navigation = [
-  { name: "Page_d_acceuil", href: '/', current: false},
+  { name: "acceuil", href: '/', current: false},
   { name: 'Sur_moi', href: '/apropos', current: false},
   { name: 'Projet', href: '/projet', current: false},
   { name: 'Reconnaissance', href: '/reconnaissance', current: false},
