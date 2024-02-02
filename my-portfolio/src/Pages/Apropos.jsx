@@ -27,7 +27,7 @@ function Illustration() {
     }, []);
     return(
         <>
-        <section className="flex lg:w-fit items-center justify-center xl:mx-48">
+        <section className="flex lg:w-fit items-center justify-center xl:mx-44">
             <div>
                 <TextTransition springConfig={presets.wobbly}>{Illustrates[index % Illustrates.length]}</TextTransition>
             </div>
@@ -38,7 +38,7 @@ function Illustration() {
 export function Apropos(){
     return(
         <>
-        <div className="h-[100dvh] max-sm:h-[200dvh] sm:max-md:h-[180dvh] md:max-lg:h-[150dvh] relative acceuil-body max-sm:grid max-sm:grid-rows-2 sm:max-md:grid sm:max-md:grid-rows-2 md:max-lg:grid md:max-lg:grid-rows-2 lg:max-xl:grid lg:max-xl:grid-cols-2 xl:flex xl:items-center xl:justify-end w-full">
+        <div className="h-[100dvh] max-sm:h-[200dvh] sm:max-md:h-[180dvh] md:max-lg:h-[150dvh] relative acceuil-body max-sm:grid max-sm:grid-rows-2 max-sm:grid-cols-1 sm:max-md:grid sm:max-md:grid-rows-2 sm:max-md:grid-cols-1 md:max-lg:grid md:max-lg:grid-cols-1 md:max-lg:grid-rows-2 lg:max-xl:grid lg:max-xl:grid-cols-2 xl:grid xl:grid-cols-2 w-full">
         <Navbar/>
         <Concernent/>
         <Illustration/>
