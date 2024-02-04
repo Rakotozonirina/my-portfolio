@@ -46,10 +46,10 @@ function Competence(){
                 </div>
             </div>
             <h3 className="max-sm:py-4 sm:max-md:py-4 md:max-lg:py-4 xl:py-4 text-2xl font-Kalam font-semibold text-[#FEF5EA] sm:text-xl dark:text-gray-700">
-                Concerne sur moi
+                SAYNA D-CLICK
             </h3>
             <p className="max-sm:py-4 sm:max-md:py-4 md:max-lg:py-4 xl:py-4 text-gray-300 font-Kalam text-md dark:text-gray-500">
-                Mon amour pour la construction du front-end des sites web s'accompagne d'une passion pour surmonter les obstacles. Je suis prêt à relever tout défi qui me permettra d'exploiter pleinement mes compétences et de contribuer de manière significative.
+                J’ai suivi une formation de 9 mois chez sayna pour une spécialité Front end et toute les bases de developpement web.
             </p>
         </div>
         </SwiperSlide>
@@ -64,10 +64,10 @@ function Competence(){
                 </div>
             </div>
             <h3 className="max-sm:py-4 sm:max-md:py-4 md:max-lg:py-4 xl:py-4 text-2xl font-Kalam font-semibold text-[#FEF5EA] sm:text-xl dark:text-gray-700">
-                Concerne sur moi
+                IMFORMATIQUE DE GESTION
             </h3>
             <p className="max-sm:py-4 sm:max-md:py-4 md:max-lg:py-4 xl:py-4 text-gray-300 font-Kalam text-md dark:text-gray-500">
-                Mon amour pour la construction du front-end des sites web s'accompagne d'une passion pour surmonter les obstacles. Je suis prêt à relever tout défi qui me permettra d'exploiter pleinement mes compétences et de contribuer de manière significative.
+                j’ai suivi un parcours de gestion informatique chez l’université de mahajanga IUGM jusqu’ à present.
             </p>
         </div>
         </SwiperSlide>
@@ -77,7 +77,7 @@ function Competence(){
 
 export default function Concernent(){
     return(
-        <div className="xl:px-12 xl:flex xl:items-center xl:justify-center max-sm:px-6 max-sm:flex max-sm:items-center max-sm:justify-center sm:max-md:px-12 sm:max-md:flex sm:max-md:items-center sm:max-md:justify-center sm:max-md:border sm:max-md:border-red-400 md:max-lg:flex md:max-lg:items-center md:max-lg:justify-center md:max-lg:px-12 lg:max-xl:flex lg:max-xl:justify-center lg:max-xl:px-12 lg:max-xl:items-center">
+        <div className="xl:px-12 xl:flex xl:items-center xl:justify-center max-sm:px-6 max-sm:flex max-sm:items-center max-sm:justify-center sm:max-md:px-12 sm:max-md:flex sm:max-md:items-center sm:max-md:justify-center md:max-lg:flex md:max-lg:items-center md:max-lg:justify-center md:max-lg:px-12 lg:max-xl:flex lg:max-xl:justify-center lg:max-xl:px-12 lg:max-xl:items-center">
             <Competence/>
         </div>
     )
