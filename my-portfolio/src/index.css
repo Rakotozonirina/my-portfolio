@@ -6,3 +6,12 @@
 .acceuil-body{
     overflow: hidden;
 }
+.swiper-container-vertical{
+    @apply border border-green-500 h-[40dvh] relative
+}
+.swiper-button-next::after{
+    @apply border border-yellow-500 rotate-90 absolute -bottom-16 right-0
+}
+.swiper-button-prev::after{
+    @apply border border-yellow-500 rotate-90
+}
