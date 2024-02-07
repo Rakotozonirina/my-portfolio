@@ -7,11 +7,11 @@
     overflow: hidden;
 }
 .swiper-container-vertical{
-    @apply border border-green-500 h-[40dvh] relative
+    @apply border border-green-500 h-[40dvh] w-[60rem] grid place-items-center
 }
 .swiper-button-next::after{
-    @apply border border-yellow-500 rotate-90 absolute -bottom-16 right-0
+    @apply border border-yellow-500 rotate-90 absolute -bottom-20 right-[6.5rem]
 }
 .swiper-button-prev::after{
-    @apply border border-yellow-500 rotate-90
+    @apply border border-yellow-500 rotate-90 absolute top-0 right-[6.5rem]
 }
