@@ -10,11 +10,11 @@ import City from "../Assets/Acceuil/city.svg"
 
 function HeroContact(){
     return(
-        <div className="w-full h-[100dvh] grid grid-cols-2">
-            <section className="border border-green-400 flex items-center justify-center pt-[8rem]">
-                <img src={HeroZoContact} alt="HeroZoContact" />
+        <div className="w-full h-[100dvh] max-sm:h-[200dvh] sm:max-md:h-[180dvh] md:max-lg:h-[150dvh] max-lg:grid max-lg:grid-rows-2 max-lg:grid-cols-1 lg:grid lg:grid-cols-2">
+            <section className="flex items-center justify-center lg:pt-[8rem]">
+                <img src={HeroZoContact} alt="HeroZoContact" className="max-lg:h-[60dvh] aspect-auto" />
             </section> 
-            <section className="border border-green-400 flex items-center justify-center">
+            <section className="flex items-center justify-center">
                 <div className="grid gap-2 w-[80%]">
                     <section>
                         <h1 className="text-[2.3rem] font-semibold font-Kalam">Si vous avez besoin un Intégrateur et Front-end de faire votre projet, <span className="text-[#3563E9]">en parlant ici!</span></h1>
