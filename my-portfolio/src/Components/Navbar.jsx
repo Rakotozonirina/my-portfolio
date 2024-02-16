@@ -1,6 +1,7 @@
 import { Disclosure} from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
+import Lang from './Lang'
 import LogoZo from '../Assets/Acceuil/zonirina-removebg-preview.png'
 import Switch from './Switch'
 
@@ -58,6 +59,7 @@ export default function Example() {
                 </div>
               </div>
               <Switch/>
+              <Lang/>
             </div>
           </div>
 
