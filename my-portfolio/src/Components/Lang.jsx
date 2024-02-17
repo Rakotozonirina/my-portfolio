@@ -8,6 +8,9 @@ const lngs = [
     },
     {
         id:2 ,code: "en", native: "english"
+    },
+    {
+        id:3 ,code: "mg", native: "malagasy"
     }
 ];
 
@@ -23,8 +26,8 @@ export default function Lang(){
         i18n.changeLanguage(code);
       };
     return(
-        <Listbox value={Language} onChange={setLanguage}>
-            <Listbox.Button>{Language ? Language.native : ""}</Listbox.Button>
+        <Listbox value={Language} onChange={setLanguage} as="div" className="max-md:absolute max-md:right-16 md:relative">
+            <Listbox.Button as="button" className="px-4 py-2 mx-4 dark:bg-gray-700 dark:text-[#E0F4FF] rounded">{Language ? Language.native : ""}</Listbox.Button>
             <Transition
                 enter="transition duration-100 ease-out"
                 enterFrom="transform scale-95 opacity-0"
@@ -33,11 +36,11 @@ export default function Lang(){
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
             >
-                <Listbox.Options>
+                <Listbox.Options as="ul" className="px-8 py-2 bg-[#E0F4FF] rounded absolute top-[100%]">
                 {lngs.map((lng, i) => {
                 const { code, native } = lng;
                 return(
-                    <Listbox.Option key={i} onClick={() => handleTrans(code)}>{native}</Listbox.Option>
+                    <Listbox.Option as="li" className="cursor-pointer py-2 mb-1 hover:font-semibold" key={i} onClick={() => handleTrans(code)}>{native}</Listbox.Option>
                 )
                 })}
                 </Listbox.Options>

@@ -11,6 +11,11 @@ const resources = {
         translation: {
             "first": "J'aime mon portfolio"
         }
+    },
+    mg: {
+        translation: {
+            "first": "Tiko ny portfolio ko"
+        }
     }
 };
 
