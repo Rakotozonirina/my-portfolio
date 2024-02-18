@@ -27,7 +27,7 @@ export default function Lang(){
       };
     return(
         <Listbox value={Language} onChange={setLanguage} as="div" className="max-md:absolute max-md:right-16 md:relative">
-            <Listbox.Button as="button" className="px-4 py-2 mx-4 dark:bg-gray-700 dark:text-[#E0F4FF] rounded">{Language ? Language.native : ""}</Listbox.Button>
+            <Listbox.Button as="button" className="px-4 font-Kalam py-2 mx-4 dark:bg-gray-700 bg-[#E0F4FF] dark:text-[#E0F4FF] rounded">{Language ? Language.native : ""}</Listbox.Button>
             <Transition
                 enter="transition duration-100 ease-out"
                 enterFrom="transform scale-95 opacity-0"
@@ -36,11 +36,11 @@ export default function Lang(){
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
             >
-                <Listbox.Options as="ul" className="px-8 py-2 bg-[#E0F4FF] rounded absolute top-[100%]">
+                <Listbox.Options as="ul" className="px-8 py-2 bg-gray-700 dark:text-gray-700 dark:bg-[#E0F4FF] text-[#E0F4FF] rounded absolute top-[100%]">
                 {lngs.map((lng, i) => {
                 const { code, native } = lng;
                 return(
-                    <Listbox.Option as="li" className="cursor-pointer py-2 mb-1 hover:font-semibold" key={i} onClick={() => handleTrans(code)}>{native}</Listbox.Option>
+                    <Listbox.Option as="li" className="cursor-pointer py-2 mb-1 font-Kalam hover:font-semibold" key={i} onClick={() => handleTrans(code)}>{native}</Listbox.Option>
                 )
                 })}
                 </Listbox.Options>

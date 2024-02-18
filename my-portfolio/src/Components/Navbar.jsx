@@ -16,10 +16,10 @@ export default function Example() {
   const { t, i18n } = useTranslation();
   const navigation = [
     { name: t('acceuil'), href: '/', current: false},
-    { name: 'Sur_moi', href: '/apropos', current: false},
-    { name: 'Projet', href: '/projet', current: false},
-    { name: 'Reconnaissance', href: '/reconnaissance', current: false},
-    { name: 'Contact', href: '/contact', current: false},
+    { name: t('Sur_moi'), href: '/apropos', current: false},
+    { name: t('Projet'), href: '/projet', current: false},
+    { name: t('Reconnaissance'), href: '/reconnaissance', current: false},
+    { name: t('Contact'), href: '/contact', current: false},
   ]
   return (
     <Disclosure as="nav" className="bg-gray-800 z-20 dark:bg-gradient-to-b dark:from-indigo-200 dark:to-fuchsia-300 fixed top-0 left-0 w-full">

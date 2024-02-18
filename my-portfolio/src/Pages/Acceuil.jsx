@@ -5,13 +5,15 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa6"
 import { Link } from "react-router-dom"
 import { gsap } from "gsap"
 import TextTransition, { presets } from 'react-text-transition'
+import { useTranslation } from "react-i18next"
 import { TextPlugin } from "gsap/dist/TextPlugin"
 
 function ArticleHero(){
+    const { t, i18n } = useTranslation();
     const Btn = useRef();
     const tl = useRef();
     const Para = useRef(null);
-    const TEXTES = ['INTEGRATEUR WEB ET', 'FRONT END DEVELOPPEUR', 'Bonjour!', 'Je suis', 'RAKOTOMANANA Andriamihaja Zo Nirina'];
+    const TEXTES = [t('Profession1'), t('Profession2'), t('Bonjour'), t('Jesuis'), 'RAKOTOMANANA Andriamihaja Zo Nirina'];
     const [index, setIndex] = useState(0);
     
     useEffect(() => {
