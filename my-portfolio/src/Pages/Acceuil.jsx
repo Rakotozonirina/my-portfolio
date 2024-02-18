@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState} from "react"
 import Navbar from "../Components/Navbar"
-import { useTranslation } from "react-i18next"
 import { Hero } from "./Components/Acceuil/Hero"
 import { FaLinkedinIn, FaGithub } from "react-icons/fa6"
 import { Link } from "react-router-dom"
@@ -9,7 +8,6 @@ import TextTransition, { presets } from 'react-text-transition'
 import { TextPlugin } from "gsap/dist/TextPlugin"
 
 function ArticleHero(){
-    const { t, i18n } = useTranslation();
     const Btn = useRef();
     const tl = useRef();
     const Para = useRef(null);
@@ -41,7 +39,6 @@ function ArticleHero(){
         <article className="mx-8 sm:mx-16 max-sm:mt-32 sm:p-4 sm:max-md:mt-32 max-sm:w-full sm:max-md:w-[80%] md:max-lg:w-[80%] md:max-lg:mt-32 w-[40%] z-10 flex flex-col max-sm:gap-24 gap-12">
             <h1 className="text-neutral-800 dark:text-[#FEF5EA] md:max-lg:text-3xl lg:max-xl:text-3xl text-4xl font-bold font-Marker capitalize tracking-wider"><TextTransition springConfig={presets.wobbly}>{TEXTES[index % TEXTES.length]}</TextTransition></h1>
             <div>
-                <p>{t('first')}</p>
                 <p ref={Para}><span className="text-stone-600 font-Kalam dark:text-stone-300 text-xl lg:max-xl:text-lg md:max-lg:text-lg font-normal tracking-tight"></span> <span className="text-indigo-950 text-xl lg:max-xl:text-lg md:max-lg:text-lg font-normal tracking-tight dark:text-blue-600 font-Kalam" style={{ opacity: 0 }}>Contactez moi!</span> </p>
                 <button ref={Btn} className="bg-indigo-950 font-Marker dark:bg-blue-600 text-[#FEF5EA]  p-2 text-lg font-medium my-2">CV Télécharger</button>
             </div>

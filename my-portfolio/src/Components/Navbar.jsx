@@ -1,23 +1,26 @@
 import { Disclosure} from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
+import { useTranslation } from "react-i18next"
 import Lang from './Lang'
 import LogoZo from '../Assets/Acceuil/zonirina-removebg-preview.png'
 import Switch from './Switch'
 
-const navigation = [
-  { name: "acceuil", href: '/', current: false},
-  { name: 'Sur_moi', href: '/apropos', current: false},
-  { name: 'Projet', href: '/projet', current: false},
-  { name: 'Reconnaissance', href: '/reconnaissance', current: false},
-  { name: 'Contact', href: '/contact', current: false},
-]
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Example() {
+  const { t, i18n } = useTranslation();
+  const navigation = [
+    { name: t('acceuil'), href: '/', current: false},
+    { name: 'Sur_moi', href: '/apropos', current: false},
+    { name: 'Projet', href: '/projet', current: false},
+    { name: 'Reconnaissance', href: '/reconnaissance', current: false},
+    { name: 'Contact', href: '/contact', current: false},
+  ]
   return (
     <Disclosure as="nav" className="bg-gray-800 z-20 dark:bg-gradient-to-b dark:from-indigo-200 dark:to-fuchsia-300 fixed top-0 left-0 w-full">
       {({ open }) => (

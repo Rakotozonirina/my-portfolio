@@ -4,17 +4,17 @@ import { initReactI18next } from "react-i18next"
 const resources = {
     en: {
         translation: {
-            "first": "I like my portofolio"
+            "acceuil": "home"
         }
     },
     fr: {
         translation: {
-            "first": "J'aime mon portfolio"
+            "acceuil": "acceuil"
         }
     },
     mg: {
         translation: {
-            "first": "Tiko ny portfolio ko"
+            "acceuil": "tongasoa"
         }
     }
 };
