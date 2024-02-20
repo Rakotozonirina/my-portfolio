@@ -2,11 +2,13 @@ import React from "react"
 import Navbar from "../Components/Navbar"
 import { Icons } from "./Acceuil"
 import Project from "./Components/Project/Component/Project"
+import { useTranslation } from "react-i18next"
 
 function HeroProjet(){
+    const { t, i18n } = useTranslation();
     return(
         <>
-            <h1 className="text-neutral-800 absolute top-32 left-12 dark:text-[#FEF5EA] md:max-lg:text-3xl lg:max-xl:text-3xl text-4xl font-bold font-Marker capitalize tracking-wider">Projet</h1>
+            <h1 className="text-neutral-800 absolute top-32 left-12 dark:text-[#FEF5EA] md:max-lg:text-3xl lg:max-xl:text-3xl text-4xl font-bold font-Marker capitalize tracking-wider">{t('Projet')}</h1>
         </>
     )
 }

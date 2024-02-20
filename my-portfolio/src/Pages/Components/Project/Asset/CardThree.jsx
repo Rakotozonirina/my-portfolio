@@ -3,18 +3,20 @@ import { Link } from "react-router-dom"
 import { FaGithub } from "react-icons/fa6"
 import Panther from "../Picture/Project-three.jpg"
 import Me from "../../../../Assets/Acceuil/zo nirina.png"
+import { useTranslation } from "react-i18next"
 
 
 export default function CardThree(){
+    const { t, i18n } = useTranslation();
     return(
         <div className="max-sm:w-[100%] sm:max-md:w-[38rem] md:max-lg:w-[44rem] lg:max-w-2xl lg:mx-40 lg:mt-12 overflow-hidden bg-gray-800 rounded-lg shadow-md dark:bg-[#FEF5EA]">
             <img className="object-cover w-full h-64" src={Panther} alt="Honey"/>
 
             <div className="p-6">
                 <div>
-                    <span className="text-xs font-medium text-[#c5c7ff] font-Kalam uppercase dark:text-blue-400">Projet</span>
+                    <span className="text-xs font-medium text-[#c5c7ff] font-Kalam uppercase dark:text-blue-400">{t('Projet')}</span>
                     <Link to="https://eloquent-cocada-d9a9b0.netlify.app/" className="block mt-2 text-xl font-semibold text-[#FEF5EA] transition-colors duration-300 transform dark:text-neutral-800 font-Marker hover:underline" tabindex="0">Panther landing page</Link>
-                    <p className="mt-2 text-sm text-white/80 dark:text-gray-400 font-Kalam">J'ai mené à bien un projet d'évaluation chez Sayna, impliquant de nombreux aspects et figures. Mon role était d'effectuer le front et intégrateur. <span>J'ai utilisé comme outils: <span className="text-blue-600 dark:text-blue-400">Html, Css, Js, Git, Github</span> </span> afin de réaliser ce site.</p>
+                    <p className="mt-2 text-sm text-white/80 dark:text-gray-400 font-Kalam">{t('Sayna')}<span>{t('Utilisé')}<span className="text-blue-600 dark:text-blue-400">Html, Css, Js, Git, Github</span> </span> {t('réaliser')}</p>
                 </div>
 
                 <div className="mt-4">

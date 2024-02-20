@@ -1,10 +1,12 @@
 import React from "react"
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
+import { useTranslation } from "react-i18next"
 import 'swiper/css'
 
 
 function Competence(){
+    const { t, i18n } = useTranslation();
     return(
         <Swiper
         spaceBetween={50}
@@ -28,10 +30,10 @@ function Competence(){
                 </div>
             </div>
             <h3 className="max-sm:py-4 sm:max-md:py-4 md:max-lg:py-4 xl:py-4 text-2xl font-Kalam font-semibold text-[#FEF5EA] sm:text-xl dark:text-gray-700">
-                Concerne sur moi
+                {t('Concerne')}
             </h3>
             <p className="max-sm:py-4 sm:max-md:py-4 md:max-lg:py-4 xl:py-4 text-gray-300 font-Kalam text-md dark:text-gray-500">
-                Mon amour pour la construction du front-end des sites web s'accompagne d'une passion pour surmonter les obstacles. Je suis prêt à relever tout défi qui me permettra d'exploiter pleinement mes compétences et de contribuer de manière significative.
+                {t('Mon_amour')}
             </p>
         </div>
         </SwiperSlide>
@@ -49,7 +51,7 @@ function Competence(){
                 SAYNA D-CLICK
             </h3>
             <p className="max-sm:py-4 sm:max-md:py-4 md:max-lg:py-4 xl:py-4 text-gray-300 font-Kalam text-md dark:text-gray-500">
-                J’ai suivi une formation de 9 mois chez sayna pour une spécialité Front end et toute les bases de developpement web.
+                {t('Formation')}
             </p>
         </div>
         </SwiperSlide>
@@ -64,10 +66,10 @@ function Competence(){
                 </div>
             </div>
             <h3 className="max-sm:py-4 sm:max-md:py-4 md:max-lg:py-4 xl:py-4 text-2xl font-Kalam font-semibold text-[#FEF5EA] sm:text-xl dark:text-gray-700">
-                IMFORMATIQUE DE GESTION
+                {t('Universiter')}
             </h3>
             <p className="max-sm:py-4 sm:max-md:py-4 md:max-lg:py-4 xl:py-4 text-gray-300 font-Kalam text-md dark:text-gray-500">
-                j’ai suivi un parcours de gestion informatique chez l’université de mahajanga IUGM jusqu’ à present.
+                {t('Parcours')}
             </p>
         </div>
         </SwiperSlide>

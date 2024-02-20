@@ -8,9 +8,11 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import { Icons } from "./Acceuil"
 import IllustrationBest from "./Components/Reconnaissance/IllustrationBest"
+import { useTranslation } from "react-i18next"
 
 function VerticalSwipe(){
     const [activeIndex, setActiveIndex] = useState(0);
+    const { t, i18n } = useTranslation();
     const handleSlideChange = (swiper) => {
         setActiveIndex(swiper.activeIndex);
         };
@@ -53,7 +55,7 @@ function VerticalSwipe(){
                     <span className="text-lg font-bold text-indigo-500">
                         “
                     </span>
-                        Il m'a réalisé un site de portfolio vraiment excitant, il a bien suivi le concept que j'ai lui demandé.  En plus, il a même respecté le deadline de la réalisation de mon site alors que c'est bien établi 👌🤩 Je suis tellement convaincu pour son capacité et son dynamisme.
+                        {t('Avis')}
                     <span className="text-lg font-bold text-indigo-500">
                         ”
                     </span>
