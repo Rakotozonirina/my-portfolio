@@ -7,6 +7,7 @@ import { gsap } from "gsap"
 import TextTransition, { presets } from 'react-text-transition'
 import { useTranslation } from "react-i18next"
 import { TextPlugin } from "gsap/dist/TextPlugin"
+import Loading from "../Components/Loading"
 
 function ArticleHero(){
     const { t, i18n } = useTranslation();
@@ -15,7 +16,7 @@ function ArticleHero(){
     const Para = useRef(null);
     const TEXTES = [t('Profession1'), t('Profession2'), t('Bonjour'), t('Jesuis'), 'RAKOTOMANANA Andriamihaja Zo Nirina'];
     const [index, setIndex] = useState(0);
-    
+
     useEffect(() => {
         const intervalId = setInterval(
             () => setIndex((index) => index + 1),
@@ -66,14 +67,22 @@ export function Icons(){
 }
 
 export function Acceuil(){
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 2000);
+    }, []);
     return(
         <>
+        {loading ? ( <Loading/> ) : (
             <div className="w-full h-[100dvh] max-sm:items-start acceuil-body max-sm:h-[200dvh] sm:max-md:h-[180dvh] sm:max-md:items-start md:max-lg:h-[150dvh] md:max-lg:items-start md:max-lg:justify-center relative flex items-center">
-                <Navbar/>
-                <ArticleHero/>
-                <Icons/>
-                <Hero/>
+            <Navbar/>
+            <ArticleHero/>
+            <Icons/>
+            <Hero/>
             </div>
+        )}
         </>
     )
 }
