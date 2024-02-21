@@ -5,10 +5,12 @@ import IllustrationContact from "./Components/Contact/IllustrationContact"
 import Phone from "../Assets/Acceuil/phone.svg"
 import Email from "../Assets/Acceuil/mail.svg"
 import City from "../Assets/Acceuil/city.svg"
+import { useTranslation } from "react-i18next"
 
 
 
 function HeroContact(){
+    const { t, i18n } = useTranslation();
     return(
         <div className="w-full h-[100dvh] max-sm:h-[200dvh] sm:max-md:h-[180dvh] md:max-lg:h-[150dvh] max-lg:grid max-lg:grid-rows-2 max-lg:grid-cols-1 lg:grid lg:grid-cols-2">
             <section className="flex items-center justify-center lg:pt-[8rem]">
@@ -17,10 +19,10 @@ function HeroContact(){
             <section className="flex items-center justify-center">
                 <div className="grid gap-2 w-[80%]">
                     <section>
-                        <h1 className="dark:text-[#FEF5EA] text-[2.3rem] font-semibold font-Kalam">Si vous avez besoin un Intégrateur et Front-end de faire votre projet, <span className="text-[#3563E9]">en parlant ici!</span></h1>
+                        <h1 className="dark:text-[#FEF5EA] text-[2.3rem] font-semibold font-Kalam">{t('Besoin')}<span className="text-[#3563E9]">{t('Parlant')}</span></h1>
                     </section>
                     <section>
-                        <h2 className="font-Kalam dark:text-[#FEF5EA] text-[#757575] text-[1.8rem]">je suis disponible à vous!</h2>
+                        <h2 className="font-Kalam dark:text-[#FEF5EA] text-[#757575] text-[1.8rem]">{t('Disponible')}</h2>
                         <section className="border border-black dark:border-[#3563E9] bg-[#D9D9D9] p-4 rounded">
                             <ul>
                                 <li>
@@ -51,7 +53,7 @@ function HeroContact(){
                                                 tomzonirina@gmail.com
                                             </p>
                                             <p className="text-[#3563E9] font-Kalam">
-                                                Email
+                                                {t('Email')}
                                             </p>
                                         </article>
                                     </div>
@@ -66,7 +68,7 @@ function HeroContact(){
                                                 Madagascar/ Mahajanga 
                                             </p>
                                             <p className="text-[#3563E9] font-Kalam">
-                                                Pays/ Ville
+                                                {t('Ville')}
                                             </p>
                                         </article>
                                     </div>

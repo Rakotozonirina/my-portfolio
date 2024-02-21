@@ -27,6 +27,11 @@ const resources = {
             "Sayna": "I completed an assessment project at Sayna, involving many aspects and figures. My role was to act as front and integrator.",
             "Designer": "I suggested creating a portfolio, as she is a professional designer, part of D-clic and Sayna's learners. My role was to act as front and integrator.",
             "Avis": "He created a really exciting portfolio site for me, he followed the concept I asked him for. In addition, he even respected the deadline for the creation of my site even though it is well established 👌🤩 I am so convinced of his capacity and dynamism.",
+            "Besoin": "If you need an Integrator and Front-end to do your project, ",
+            "Parlant": "speaking here!",
+            "Disponible": "I am available to you!",
+            "Email": "Email",
+            "Ville": "Country/ City",
         }
     },
     fr: {
@@ -54,6 +59,11 @@ const resources = {
             "Sayna": "J'ai mené à bien un projet d'évaluation chez Sayna, impliquant de nombreux aspects et figures. Mon role était d'effectuer le front et intégrateur.",
             "Designer": "J'ai suggéré la création d'un portfolio, car elle est une designer professionnelle, faisant partie des apprenants de D-clic et Sayna. Mon role était d'effectuer le front et intégrateur. ",
             "Avis": "Il m'a réalisé un site de portfolio vraiment excitant, il a bien suivi le concept que j'ai lui demandé.  En plus, il a même respecté le deadline de la réalisation de mon site alors que c'est bien établi 👌🤩 Je suis tellement convaincu pour son capacité et son dynamisme.",
+            "Besoin": "Si vous avez besoin un Intégrateur et Front-end de faire votre projet, ",
+            "Parlant": "en parlant ici!",
+            "Disponible": "je suis disponible à vous!",
+            "Email": "Email",
+            "Ville": "Pays/ Ville",
         }
     },
     mg: {
@@ -81,6 +91,11 @@ const resources = {
             "Sayna": "Nahavita tetikasa fanombanana tao amin'ny Sayna aho, nahitana lafin-javatra sy tarehimarika maro. Ny anjarako dia ny manao ny lohany sy ny integrator.",
             "Designer": "Nanolo-kevitra ny hamorona portfolio aho, satria mpamorona matihanina izy, anisan'ny mpianatra D-clic sy Sayna. Ny anjarako dia ny manao ny lohany sy ny integrator.",
             "Avis": "Namorona tranokala portfolio tena mampientam-po ho ahy izy, nanaraka ny foto-kevitra nangatahiko taminy izy. Fanampin'izay dia nanaja ny fe-potoana nanaovana ny tranokalako mihitsy aza izy na dia efa miorina tsara aza 👌🤩 Tena resy lahatra aho amin'ny fahaizany sy ny fahavitrihany.",
+            "Besoin": "Raha mila mpandraharaha sy mpamatsy vaovao hanangonana ny tetikasao, ",
+            "Parlant": "amin'ny antoko eto!",
+            "Disponible": "Misy ahy ho anao!",
+            "Email": "Mailaka",
+            "Ville": "Firenena/ Tanàna",
         }
     }
 };
