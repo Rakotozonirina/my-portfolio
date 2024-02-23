@@ -7,9 +7,11 @@ import { Apropos } from './Pages/Apropos'
 import { Projet } from './Pages/Projet'
 import { Reconnaissance } from './Pages/Reconnaissance'
 import { Contact } from './Pages/Contact'
+import LoadingNice from './Components/LoadingNice';
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || ' ');
+  const [loading, setLoading] = useState(true);
 
   const changeCurrentTheme = (newTheme) => {
     setTheme(newTheme);
@@ -23,19 +25,28 @@ function App() {
       document.body.classList.add('dark');
     }
   },[theme]);
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 2000);
+    }, []);
   return (
     <Theme.Provider value={{currentTheme: theme, changeCurrentTheme}}>
-    <div className='w-full h-[100dvh] max-sm:h-[200dvh] sm:max-md:h-[180vh] md:max-lg:h-[150dvh] bg-gradient-to-b from-indigo-200 to-fuchsia-300 dark:bg-gradient-to-b dark:from-gray-800 dark:to-gray-800'>
-      <Router>
-        <Routes>
-          <Route path='/' element={<Acceuil/>}/>
-          <Route path='/apropos' element={<Apropos/>}/>
-          <Route path='/projet' element={<Projet/>}/>
-          <Route path='/reconnaissance' element={<Reconnaissance/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-        </Routes>
-      </Router>
-      </div>
+      {loading ? ( <LoadingNice/> ) : (
+            <>
+                <div className='w-full h-[100dvh] max-sm:h-[200dvh] sm:max-md:h-[180vh] md:max-lg:h-[150dvh] bg-gradient-to-b from-indigo-200 to-fuchsia-300 dark:bg-gradient-to-b dark:from-gray-800 dark:to-gray-800'>
+                <Router>
+                  <Routes>
+                    <Route path='/' element={<Acceuil/>}/>
+                    <Route path='/apropos' element={<Apropos/>}/>
+                    <Route path='/projet' element={<Projet/>}/>
+                    <Route path='/reconnaissance' element={<Reconnaissance/>}/>
+                    <Route path='/contact' element={<Contact/>}/>
+                  </Routes>
+                </Router>
+                </div>
+            </>
+        )}
     </Theme.Provider>
   );
 }

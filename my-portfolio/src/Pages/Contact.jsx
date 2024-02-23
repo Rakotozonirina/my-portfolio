@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import Navbar from "../Components/Navbar"
 import HeroZoContact from "../Assets/Acceuil/zo nirina.png"
 import IllustrationContact from "./Components/Contact/IllustrationContact"
@@ -6,6 +6,7 @@ import Phone from "../Assets/Acceuil/phone.svg"
 import Email from "../Assets/Acceuil/mail.svg"
 import City from "../Assets/Acceuil/city.svg"
 import { useTranslation } from "react-i18next"
+import Loading from "../Components/Loading"
 
 
 
@@ -81,14 +82,31 @@ function HeroContact(){
         </div>
     )
 };
+function FirstSuspense(){
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 2000);
+    }, []);
+    return(
+        <>
+        {loading ? ( <Loading/> ) : (
+            <>
+                <HeroContact/>
+                <IllustrationContact/>
+            </>
+        )}
+        </>
+    )
+}
 
 export function Contact(){
     return(
         <>
         <div className="grid place-items-center w-full h-[100dvh] max-sm:h-[200dvh] sm:max-md:h-[180dvh] md:max-lg:h-[150dvh] relative acceuil-body">
             <Navbar/>
-            <HeroContact/>
-            <IllustrationContact/>
+            <FirstSuspense/>
         </div>
         </>
     )

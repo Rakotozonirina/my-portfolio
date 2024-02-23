@@ -66,7 +66,7 @@ export function Icons(){
     )
 }
 
-export function Acceuil(){
+function FirstSuspense(){
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         setTimeout(() => {
@@ -76,13 +76,23 @@ export function Acceuil(){
     return(
         <>
         {loading ? ( <Loading/> ) : (
+            <>
+                <ArticleHero/>
+                <Icons/>
+                <Hero/>
+            </>
+        )}
+        </>
+    )
+}
+
+export function Acceuil(){
+    return(
+        <>
             <div className="w-full h-[100dvh] max-sm:items-start acceuil-body max-sm:h-[200dvh] sm:max-md:h-[180dvh] sm:max-md:items-start md:max-lg:h-[150dvh] md:max-lg:items-start md:max-lg:justify-center relative flex items-center">
             <Navbar/>
-            <ArticleHero/>
-            <Icons/>
-            <Hero/>
+            <FirstSuspense/>
             </div>
-        )}
         </>
     )
 }
