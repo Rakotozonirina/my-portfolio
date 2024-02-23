@@ -110,7 +110,7 @@ function VerticalSwipe(){
     )
 }
 
-export function Reconnaissance() {
+export default function Reconnaissance() {
     return(
         <>
         <div className="w-full h-[100dvh] max-sm:h-[200dvh] sm:max-md:h-[180dvh] md:max-lg:h-[150dvh] grid items-center justify-center relative acceuil-body">

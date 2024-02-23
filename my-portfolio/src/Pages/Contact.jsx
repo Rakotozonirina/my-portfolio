@@ -101,7 +101,7 @@ function FirstSuspense(){
     )
 }
 
-export function Contact(){
+export default function Contact(){
     return(
         <>
         <div className="grid place-items-center w-full h-[100dvh] max-sm:h-[200dvh] sm:max-md:h-[180dvh] md:max-lg:h-[150dvh] relative acceuil-body">

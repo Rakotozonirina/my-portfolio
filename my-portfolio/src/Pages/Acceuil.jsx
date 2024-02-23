@@ -86,7 +86,7 @@ function FirstSuspense(){
     )
 }
 
-export function Acceuil(){
+export default function Acceuil(){
     return(
         <>
             <div className="w-full h-[100dvh] max-sm:items-start acceuil-body max-sm:h-[200dvh] sm:max-md:h-[180dvh] sm:max-md:items-start md:max-lg:h-[150dvh] md:max-lg:items-start md:max-lg:justify-center relative flex items-center">

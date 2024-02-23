@@ -37,7 +37,7 @@ function Illustration() {
 }
 
 
-export function Apropos(){
+export default function Apropos(){
     return(
         <>
         <div className="h-[100dvh] max-sm:h-[200dvh] sm:max-md:h-[180dvh] md:max-lg:h-[150dvh] relative acceuil-body max-sm:grid max-sm:grid-rows-2 max-sm:grid-cols-1 sm:max-md:grid sm:max-md:grid-rows-2 sm:max-md:grid-cols-1 md:max-lg:grid md:max-lg:grid-cols-1 md:max-lg:grid-rows-2 lg:max-xl:grid lg:max-xl:grid-cols-2 xl:grid xl:grid-cols-2 w-full">
