@@ -23,6 +23,7 @@ export default function Lang(){
         }, [i18n.language]
     )
     const handleTrans = (code) => {
+        setLanguage(lngs.find((lng) => lng.code === code) || lngs[0]);
         i18n.changeLanguage(code);
       };
     return(
