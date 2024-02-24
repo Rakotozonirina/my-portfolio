@@ -8,6 +8,7 @@ import TextTransition, { presets } from 'react-text-transition'
 import { useTranslation } from "react-i18next"
 import { TextPlugin } from "gsap/dist/TextPlugin"
 import Loading from "../Components/Loading"
+import Button from "./Components/Acceuil/Button"
 
 function ArticleHero(){
     const { t, i18n } = useTranslation();
@@ -25,10 +26,6 @@ function ArticleHero(){
           return () => clearTimeout(intervalId);
     }, []);
     useEffect(() => {
-        tl.current = gsap.timeline()
-        .to(Btn.current, {scale: 1.1, duration: 2, repeat: -1, yoyo:true, opacity: 1, y: 0})
-    },[]);
-    useEffect(() => {
         console.log('Para.current:', Para.current);
         console.log('Para.current.children[0]:', Para.current.children[0]);
         setTimeout(() => {
@@ -43,7 +40,7 @@ function ArticleHero(){
             <h1 className="text-neutral-800 dark:text-[#FEF5EA] md:max-lg:text-3xl lg:max-xl:text-3xl text-4xl font-bold font-Marker capitalize tracking-wider"><TextTransition springConfig={presets.wobbly}>{TEXTES[index % TEXTES.length]}</TextTransition></h1>
             <div>
                 <p ref={Para}><span className="text-stone-600 font-Kalam dark:text-stone-300 text-xl lg:max-xl:text-lg md:max-lg:text-lg font-normal tracking-tight"></span> <Link to="/contact" className="text-indigo-950 text-xl lg:max-xl:text-lg md:max-lg:text-lg font-normal tracking-tight dark:text-blue-600 font-Kalam" style={{ opacity: 0 }}>{t('Contactez')}</Link> </p>
-                <button ref={Btn} className="bg-indigo-950 font-Marker dark:bg-blue-600 text-[#FEF5EA]  p-2 text-lg font-medium my-2">{t('Telecharge')}</button>
+                <Button/>
             </div>
         </article>
     )
