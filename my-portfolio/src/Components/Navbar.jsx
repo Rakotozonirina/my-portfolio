@@ -28,7 +28,9 @@ export default function Example() {
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center sm:max-md:grid sm:max-md:content-center sm:max-md:justify-center sm:max-md:relative max-sm:grid max-sm:content-center max-sm:justify-center justify-between">
                 <div>
+                  <Link to="/">
                     <img src={LogoZo} alt="logo Zo" className='block object-cover h-[20dvh]' />
+                  </Link>
                 </div> 
               <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
                 {/* Mobile menu button*/}

@@ -4,6 +4,7 @@ import './App.css';
 import Theme from './Context/Theme'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import LoadingNice from './Components/LoadingNice'
+import Oops from './Components/Oops';
 const Acceuil = React.lazy(() => import('./Pages/Acceuil'));
 const Apropos = React.lazy(() => import('./Pages/Apropos'));
 const Projet = React.lazy(() => import('./Pages/Projet'));
@@ -37,6 +38,7 @@ function App() {
                     <Route path='/projet' element={<Projet/>}/>
                     <Route path='/reconnaissance' element={<Reconnaissance/>}/>
                     <Route path='/contact' element={<Contact/>}/>
+                    <Route path='*' element={<Oops/>}/>
                   </Routes>
                 </Router>
                 </div>

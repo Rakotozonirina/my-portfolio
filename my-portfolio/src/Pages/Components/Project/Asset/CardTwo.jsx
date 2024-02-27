@@ -15,7 +15,7 @@ export default function CardTwo(){
                 <div>
                     <span className="text-xs font-medium text-[#c5c7ff] font-Kalam uppercase dark:text-blue-400">{t('Projet')}</span>
                     <Link to="https://coruscating-arithmetic-f57467.netlify.app/" className="block mt-2 text-xl font-semibold text-[#FEF5EA] transition-colors duration-300 transform dark:text-neutral-800 font-Marker hover:underline" tabindex="0">Portfolio de RAHAJANIRINA Nomenjanahary Tantely</Link>
-                    <p className="mt-2 text-sm text-white/80 dark:text-gray-400 font-Kalam">{t('Designer')}<span>{t('Utilisé')}<span className="text-blue-600 dark:text-blue-400">Html, Css, Js, Tailwindcss, Git, Github, React</span> </span> {t('réaliser')}</p>
+                    <p className="mt-2 text-md text-white/50 dark:text-gray-400 font-Kalam">{t('Designer')}<span>{t('Utilisé')}<span className="text-blue-600 dark:text-blue-400">Html, Css, Js, Tailwindcss, Git, Github, React</span> </span> {t('réaliser')}</p>
                 </div>
 
                 <div className="mt-4">
